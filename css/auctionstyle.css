@@ -1,0 +1,20 @@
+.items{
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.highestbidform{
+    display: inline-block;
+    width: 120px;
+}
+
+
+.highestbidbox{
+    height: 20px;
+    width: 180px;
+    border: solid black;
+    border-width: 1px;
+    display: inline-block;
+}

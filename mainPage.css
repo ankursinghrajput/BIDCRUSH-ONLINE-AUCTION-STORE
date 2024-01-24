@@ -1,0 +1,256 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.header {
+  background-color: #e7c3a4;
+}
+
+nav {
+  display: flex;
+  padding: 1% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 80px;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.logo-name {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.logo-name:hover {
+  color: #525050;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-link li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 12px;
+}
+
+.nav-link li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link li a:hover {
+  color: #525050;
+}
+
+.nav-link li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link li:hover::after {
+  width: 100%;
+}
+
+/* HOME PAGE */
+#home {
+  display: flex;
+  background-size: cover;
+}
+
+.about {
+  flex: 60%;
+  padding: 4% 10%;
+  text-align: justify;
+}
+
+.about h1 {
+  font-size: 30px;
+}
+
+.home-img {
+  flex: 40%;
+}
+
+.home-img img {
+  height: 350px;
+  width: 400px;
+  margin-right: 140px;
+}
+
+/* PRODUCTS */
+.item-container {
+  display: flex;
+  margin: 50px;
+}
+
+.item-container:hover {
+  background-color: #f7e5d5;
+}
+
+.item-img {
+  background-color: transparent;
+  height: 400px;
+  width: 600px;
+  perspective: 1000px;
+}
+
+.item-img-inner {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  margin: 8% 0 0 12%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.item-img:hover .item-img-inner {
+  transform: rotateY(180deg);
+}
+
+.item-img-front,
+.item-img-back {
+  position: absolute;
+  width: 350px;
+  height: 310px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.item-img-front {
+  flex: 40%;
+  background-color: #bbb;
+  color: black;
+}
+
+.item-img-back {
+  flex: 40%;
+  background-image: url("images/timebox.jpg");
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.item-img-back h1 {
+  margin-top: 20px;
+}
+
+.item-bid {
+  flex: 40%;
+  margin-right: 100px;
+}
+
+.bidbtn {
+  background-image: url("logo.png");
+  background-size: cover;
+  height: 30px;
+  width: 35px;
+}
+
+.bidupdate {
+  display: inline;
+}
+
+.sidebox {
+  flex: 20%;
+  background-image: url("images/sidebox.jpg");
+  margin: 60px 60px 30px 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.sidebox p {
+  display: inline-block;
+}
+
+.highestbidbox {
+  height: 20px;
+  width: 180px;
+  border: solid black;
+  border-width: 1px;
+  display: inline-block;
+}
+
+.highestbidbtn {
+  display: inline-block;
+  width: 120px;
+}
+
+.bidinfo h3 {
+  text-align: justify;
+}
+
+.sidebox hr {
+  width: 80%;
+  text-align: center;
+  margin-left: 22px;
+}
+
+/* CONTACT */
+#contact {
+  background-color: #e7c3a4;
+  padding: 5% 15%;
+  text-align: center;
+}
+
+.fabn {
+  padding: 25px 30px 35px 30px;
+
+  color: black;
+}
+
+.fabn:hover {
+  color: hsl(26, 59%, 92%);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+  #home {
+    flex-direction: column;
+  }
+  #home img {
+    margin-left: 18%;
+  }
+
+  .item-container {
+    flex-direction: column;
+  }
+}
+
+
+.btn{
+  background-color: #f7e5d5;
+  border: none;
+  border-radius: 9%;
+  padding: 5px 16px;
+  background-image: url("images/logo.png");
+  background-size: cover;
+  margin-left: 4%;
+  
+}
+
+
+.input-bid{
+  
+  padding: 1%;
+}
+.input-bid:hover{
+  background-color: rgb(248, 236, 196);
+  
+}
